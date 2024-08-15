@@ -95,7 +95,8 @@ extension OpenAIRouter: URLRequestConfigurable {
     /// - Not: Yetkilendirme başlığı bir OpenAI API token olan `Bearer` token içerir ve güvenli bir şekilde yönetilmelidir.
     var headers: HTTPHeaders? {
         return [
-            "Authorization": "Bearer sk-proj-GZXBKboEC9XrjRQYCRCvT3BlbkFJbjkehEaYZqFyH5CGDzY8",
+           
+            "Authorization": "Bearer Kendi Tokenininizi Girin",
             "Content-Type": "application/json"
         ]
     }

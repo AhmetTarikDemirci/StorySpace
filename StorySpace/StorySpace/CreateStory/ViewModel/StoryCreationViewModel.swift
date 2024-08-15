@@ -59,6 +59,8 @@ class StoryCreationViewModel: BaseViewModel {
     /// Uyarı mesajlarının gösterilmesi için kullanılan değişken.
     @Published var showAlert: Bool = false
     
+    @Published var isError : Bool = false
+    
     /// Desteklenen hikaye türleri.
     let storyTypes = Strings.storyTypes
     
@@ -81,39 +83,50 @@ class StoryCreationViewModel: BaseViewModel {
     /// Kullanıcının girdiği bilgilere dayanarak bir hikaye oluşturur.
     /// Hikaye metni ve görseli OpenAI API'si kullanılarak oluşturulur.
     func createStory() {
-        print("Starting story creation...")
-        isLoading = true
-        isStoryGenerated = false
-        
-        let storyPrompt: String = {
-            if language == Strings.turkish {
-                return """
-                \(storyType) türünde bir hikaye oluştur. Hikaye, \(setting) ortamında \(mainCharacterName) adlı \(mainCharacterTraits) bir karakteri anlatıyor. Hikayenin teması \(theme) ve \(specialEvent) gibi bir olay içeriyor. Hikayenin uzunluğu \(storyLength) olmalı.
-                """
-            } else {
-                return """
-                Create a \(storyType) story set in \(setting), featuring a character named \(mainCharacterName) who is \(mainCharacterTraits). The story theme is \(theme) and includes an event where \(specialEvent). The story should be \(storyLength) in length.
-                """
-            }
-        }()
-        print(storyPrompt)
-        print(textModel)
-        sendMessage(with: storyPrompt) { [weak self] storyText in
-            guard let self = self else { return }
-            DispatchQueue.main.async {
-                print("Received story text: \(storyText)")
-                self.generatedStory = storyText
-                self.generateImage(for: storyText, artStyle: self.artStyle ) { image in
-                    DispatchQueue.main.async {
-                        print("Generated image URL: \(image ?? "No image")")
-                        self.generatedImage = image ?? ""
-                        self.isLoading = false
-                        self.isStoryGenerated = true
-                    }
-                }
-            }
-        }
-    }
+           print("Starting story creation...")
+           isLoading = true
+           isStoryGenerated = false
+           
+           let storyPrompt: String = {
+               if language == Strings.turkish {
+                   return """
+                   \(storyType) türünde bir hikaye oluştur. Hikaye, \(setting) ortamında \(mainCharacterName) adlı \(mainCharacterTraits) bir karakteri anlatıyor. Hikayenin teması \(theme) ve \(specialEvent) gibi bir olay içeriyor. Hikayenin uzunluğu \(storyLength) olmalı.
+                   """
+               } else {
+                   return """
+                   Create a \(storyType) story set in \(setting), featuring a character named \(mainCharacterName) who is \(mainCharacterTraits). The story theme is \(theme) and includes an event where \(specialEvent). The story should be \(storyLength) in length.
+                   """
+               }
+           }()
+           print(storyPrompt)
+           print(textModel)
+           sendMessage(with: storyPrompt) { [weak self] storyText in
+               guard let self = self else { return }
+               DispatchQueue.main.async {
+                   if storyText.starts(with: "Hata:") {
+                       self.errorMessage = storyText
+                       self.isError = true
+                       self.isLoading = false
+                   } else {
+                       self.generatedStory = storyText
+                       self.generateImage(for: storyText, artStyle: self.artStyle ) { image in
+                           DispatchQueue.main.async {
+                               if let image = image {
+                                   print("Generated image URL: \(image)")
+                                   self.generatedImage = image
+                                   self.isLoading = false
+                                   self.isStoryGenerated = true
+                               } else {
+                                   self.errorMessage = "Görsel oluşturulamadı."
+                                   self.isError = true
+                                   self.isLoading = false
+                               }
+                           }
+                       }
+                   }
+               }
+           }
+       }
 
     /// Kullanıcı tarafından girilen alanların geçerli olup olmadığını doğrular.
     /// - Returns: Tüm alanlar doluysa `true`, aksi halde `false` döner.

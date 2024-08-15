@@ -25,6 +25,8 @@ struct CreateStoryView: View {
                         loadingView
                     } else if viewModel.isStoryGenerated {
                         generatedStoryView
+                    } else if viewModel.isError {
+                        errorView
                     } else {
                         storyInputFields
                     }
@@ -119,6 +121,24 @@ struct CreateStoryView: View {
         }
     }
     
+    private var errorView: some View {
+        VStack(spacing: 20) {
+            Text("An error occurred")
+                .font(.headline)
+                .foregroundColor(.red)
+            
+            Text(viewModel.errorMessage)
+                .multilineTextAlignment(.center)
+                .foregroundColor(.secondary)
+            
+            SSButton(text: Strings.recreateButton, backgroundColor: .colorBlue, textWidth: .infinity) {
+                viewModel.resetStory()
+                viewModel.isError = false
+            }
+        }
+        .padding()
+    }
+    
     /// Yeniden oluşturma ve kaydetme işlemleri için butonları içeren görünüm.
     /// Yeniden oluşturma ve kaydetme işlemleri için butonları içeren görünüm.
     private var actionButtons: some View {
@@ -126,6 +146,8 @@ struct CreateStoryView: View {
             SSButton(text: Strings.recreateButton, backgroundColor: .colorBlue, textWidth: .infinity) {
                 viewModel.resetStory()
             }
+            .disabled(viewModel.buttonState)
+            
             SSButton(text: Strings.saveButton, backgroundColor: .colorBlue, textWidth: .infinity, isRequesting: viewModel.buttonState) {
                 viewModel.saveStoryToFirebase { success in
                     if success {
@@ -136,7 +158,7 @@ struct CreateStoryView: View {
             }
         }
     }
-
+    
     
     /// Dil seçim görünümü.
     private var languagePicker: some View {
