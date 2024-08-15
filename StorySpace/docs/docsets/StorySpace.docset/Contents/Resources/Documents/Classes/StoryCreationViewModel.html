@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>StoryCreationViewModel Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/StoryCreationViewModel" class="dashAnchor"></a>
+    <a title="StoryCreationViewModel Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">StorySpace Docs</a> (75% documented)</p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fahmettarikdemirci.io%2Fstory_space%2Fdocs%2Findex.html"><img src="../img/dash.png" alt="Dash"/>Install in Dash</a></p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">StorySpace</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        <a href="../View%20Models.html">View Models</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        StoryCreationViewModel Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Views.html">Views</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/TabbarView.html">TabbarView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/HomeView.html">HomeView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WelcomeView.html">WelcomeView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CreateStoryView.html">CreateStoryView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EditProfile.html">EditProfile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MainView.html">MainView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PrivacyPolicyView.html">PrivacyPolicyView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StoryDetailView.html">StoryDetailView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ThemeChangeView.html">ThemeChangeView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WebView.html">WebView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StoryItemView.html">StoryItemView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SettingsView.html">SettingsView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../View%20Components.html">View Components</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/SSButton.html">SSButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SSErrorView.html">SSErrorView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SSImage.html">SSImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SSNoDataView.html">SSNoDataView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../View%20Models.html">View Models</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/EditProfileViewModel.html">EditProfileViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SettingsViewViewModel.html">SettingsViewViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ThemeChangeViewModel.html">ThemeChangeViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StoryCreationViewModel.html">StoryCreationViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HomeViewModel.html">HomeViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WelcomeViewModel.html">WelcomeViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MainViewModel.html">MainViewModel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Models.html">Models</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/OpenAIChatResponse.html">OpenAIChatResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Choice.html">Choice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Message.html">Message</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OpenAIImageResponse.html">OpenAIImageResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ImageData.html">ImageData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Story.html">Story</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Theme.html">Theme</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../API%20Topics.html">API Topics</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ApiService.html">ApiService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ApiConstants.html">ApiConstants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/URLRequestConfigurable.html">URLRequestConfigurable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BodyParameterEncoding.html">BodyParameterEncoding</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Router.html">Router</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/OpenAIRouter.html">OpenAIRouter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Encodable.html">Encodable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Utilities.html">Utilities</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/SwiftUI.html">SwiftUI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/SwiftUI/Color.html">– Color</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/SwiftUI/ShapeStyle.html">– ShapeStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/SwiftUI/Image.html">– Image</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Utilities.html#/s:10StorySpace7StringsV">Strings</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Global%20Variables.html">Other Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Other%20Global%20Variables.html#/resourceBundle">resourceBundle</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Extensions.html">Other Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/AppKit.html">AppKit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/AppKit.html#/NSImage">– NSImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIKit.UIColor.html">UIKit.UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIKit.UIImage.html">UIKit.UIImage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Other%20Protocols.html#/_ACResourceInitProtocol">_ACResourceInitProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ColorResource.html">ColorResource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ImageResource.html">ImageResource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/User.html">User</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>StoryCreationViewModel</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">StoryCreationViewModel</span> <span class="p">:</span> <span class="kt">BaseViewModel</span></code></pre>
+
+                </div>
+              </div>
+            <p><code>StoryCreationViewModel</code>, kullanıcı tarafından verilen bilgilere dayanarak hikaye oluşturma sürecini yöneten ViewModel&#39;dir.</p>
+
+<p>Bu sınıf, kullanıcıdan alınan bilgileri kullanarak bir hikaye oluşturur, OpenAI API&#39;si üzerinden hikaye ve görüntü oluşturur,
+ve bu bilgileri Firebase Firestore ve Firebase Storage&#39;a kaydeder.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC5themeSSvp"></a>
+                    <a name="//apple_ref/swift/Property/theme" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC5themeSSvp">theme</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Kullanıcının belirlediği tema.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="k">var</span> <span class="nv">theme</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC17mainCharacterNameSSvp"></a>
+                    <a name="//apple_ref/swift/Property/mainCharacterName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC17mainCharacterNameSSvp">mainCharacterName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Hikayenin ana karakterinin adı.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="k">var</span> <span class="nv">mainCharacterName</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC19mainCharacterTraitsSSvp"></a>
+                    <a name="//apple_ref/swift/Property/mainCharacterTraits" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC19mainCharacterTraitsSSvp">mainCharacterTraits</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Ana karakterin özellikleri.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="k">var</span> <span class="nv">mainCharacterTraits</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC7settingSSvp"></a>
+                    <a name="//apple_ref/swift/Property/setting" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC7settingSSvp">setting</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Hikayenin geçtiği ortam.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="k">var</span> <span class="nv">setting</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC9storyTypeSSvp"></a>
+                    <a name="//apple_ref/swift/Property/storyType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC9storyTypeSSvp">storyType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Hikayenin türü.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="k">var</span> <span class="nv">storyType</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC12specialEventSSvp"></a>
+                    <a name="//apple_ref/swift/Property/specialEvent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC12specialEventSSvp">specialEvent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Hikayede yer alacak özel bir olay.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="k">var</span> <span class="nv">specialEvent</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC11storyLengthSSvp"></a>
+                    <a name="//apple_ref/swift/Property/storyLength" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC11storyLengthSSvp">storyLength</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Hikayenin uzunluğu.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="k">var</span> <span class="nv">storyLength</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC8languageSSvp"></a>
+                    <a name="//apple_ref/swift/Property/language" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC8languageSSvp">language</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Hikayenin oluşturulacağı dil.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="k">var</span> <span class="nv">language</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC09generatedA0SSvp"></a>
+                    <a name="//apple_ref/swift/Property/generatedStory" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC09generatedA0SSvp">generatedStory</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Oluşturulan hikaye metni.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="k">var</span> <span class="nv">generatedStory</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC14generatedImageSSvp"></a>
+                    <a name="//apple_ref/swift/Property/generatedImage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC14generatedImageSSvp">generatedImage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Oluşturulan hikaye için üretilen görselin URL&#39;si.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="k">var</span> <span class="nv">generatedImage</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC02isA9GeneratedSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isStoryGenerated" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC02isA9GeneratedSbvp">isStoryGenerated</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Hikayenin başarıyla oluşturulup oluşturulmadığını belirten durum.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="k">var</span> <span class="nv">isStoryGenerated</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC8artStyleSSvp"></a>
+                    <a name="//apple_ref/swift/Property/artStyle" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC8artStyleSSvp">artStyle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Kullanıcının belirlediği sanat tarzı.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="k">var</span> <span class="nv">artStyle</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC04textE0SSvp"></a>
+                    <a name="//apple_ref/swift/Property/textModel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC04textE0SSvp">textModel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Kullanıcının belirlediği metin modeli.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="k">var</span> <span class="nv">textModel</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC9showAlertSbvp"></a>
+                    <a name="//apple_ref/swift/Property/showAlert" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC9showAlertSbvp">showAlert</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Uyarı mesajlarının gösterilmesi için kullanılan değişken.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="k">var</span> <span class="nv">showAlert</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC10storyTypesSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/storyTypes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC10storyTypesSaySSGvp">storyTypes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Desteklenen hikaye türleri.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">storyTypes</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC12storyLengthsSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/storyLengths" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC12storyLengthsSaySSGvp">storyLengths</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Desteklenen hikaye uzunlukları.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">storyLengths</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC9languagesSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/languages" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC9languagesSaySSGvp">languages</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Desteklenen diller.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">languages</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC9artStylesSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/artStyles" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC9artStylesSaySSGvp">artStyles</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Desteklenen sanat tarzları.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">artStyles</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC10textModelsSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/textModels" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC10textModelsSaySSGvp">textModels</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Desteklenen metin modelleri.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">textModels</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC06createA0yyF"></a>
+                    <a name="//apple_ref/swift/Method/createStory()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC06createA0yyF">createStory()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Kullanıcının girdiği bilgilere dayanarak bir hikaye oluşturur.
+Hikaye metni ve görseli OpenAI API&#39;si kullanılarak oluşturulur.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createStory</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC14validateFieldsSbyF"></a>
+                    <a name="//apple_ref/swift/Method/validateFields()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC14validateFieldsSbyF">validateFields()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Kullanıcı tarafından girilen alanların geçerli olup olmadığını doğrular.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">validateFields</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Tüm alanlar doluysa <code>true</code>, aksi halde <code>false</code> döner.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC05resetA0yyF"></a>
+                    <a name="//apple_ref/swift/Method/resetStory()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC05resetA0yyF">resetStory()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Hikaye oluşturma sürecini sıfırlar.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resetStory</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC11sendMessage4with10completionySS_ySSctF"></a>
+                    <a name="//apple_ref/swift/Method/sendMessage(with:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC11sendMessage4with10completionySS_ySSctF">sendMessage(with:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>OpenAI API&#39;si üzerinden bir mesaj gönderir ve geri dönen yanıtı alır.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sendMessage</span><span class="p">(</span><span class="n">with</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>message</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>OpenAI API&#39;sine gönderilecek mesaj.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Mesajın yanıtını döndüren closure.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC13generateImage33_45D68A4BD831475B20B74F30CB12E5BELL3for8artStyle10completionySS_SSySSSgctF"></a>
+                    <a name="//apple_ref/swift/Method/generateImage(for:artStyle:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC13generateImage33_45D68A4BD831475B20B74F30CB12E5BELL3for8artStyle10completionySS_SSySSSgctF">generateImage(for:<wbr>artStyle:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>OpenAI API&#39;si üzerinden bir görüntü oluşturur ve geri dönen URL&#39;yi alır.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">generateImage</span><span class="p">(</span><span class="k">for</span> <span class="nv">prompt</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">artStyle</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>prompt</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Görüntünün oluşturulması için kullanılacak metin isteği.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>artStyle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Görüntünün oluşturulacağı sanat tarzı.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Görüntünün URL&#39;sini döndüren closure.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC04saveA10ToFirebase10completionyySbc_tF"></a>
+                    <a name="//apple_ref/swift/Method/saveStoryToFirebase(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC04saveA10ToFirebase10completionyySbc_tF">saveStoryToFirebase(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Oluşturulan hikayeyi Firebase&#39;e kaydeder.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">saveStoryToFirebase</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>İşlemin başarılı olup olmadığını döndüren closure.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC21uploadImageToFirebase33_45D68A4BD831475B20B74F30CB12E5BELL9imageData10completiony10Foundation0T0V_ySbctF"></a>
+                    <a name="//apple_ref/swift/Method/uploadImageToFirebase(imageData:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC21uploadImageToFirebase33_45D68A4BD831475B20B74F30CB12E5BELL9imageData10completiony10Foundation0T0V_ySbctF">uploadImageToFirebase(imageData:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>İndirilen görüntüyü Firebase Storage&#39;a yükler.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">uploadImageToFirebase</span><span class="p">(</span><span class="nv">imageData</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>imageData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Yüklenecek görüntü verisi.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>İşlemin başarılı olup olmadığını döndüren closure.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10StorySpace0A17CreationViewModelC04saveA11ToFirestore33_45D68A4BD831475B20B74F30CB12E5BELL8imageUrl10completionySS_ySbctF"></a>
+                    <a name="//apple_ref/swift/Method/saveStoryToFirestore(imageUrl:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10StorySpace0A17CreationViewModelC04saveA11ToFirestore33_45D68A4BD831475B20B74F30CB12E5BELL8imageUrl10completionySS_ySbctF">saveStoryToFirestore(imageUrl:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Oluşturulan hikayeyi Firebase Firestore&#39;a kaydeder.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">saveStoryToFirestore</span><span class="p">(</span><span class="nv">imageUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>imageUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Hikaye için oluşturulan görüntünün URL&#39;si.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>İşlemin başarılı olup olmadığını döndüren closure.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2024 <a class="link" href="https://ahmettarikdemirci.io/" target="_blank" rel="external noopener">Ahmet Tarık Demirci</a>. All rights reserved. (Last updated: 2024-08-15)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+# jazzy.yaml
+module: StorySpace
+output: docs
+author: Ahmet Tarık Demirci
+author_url: https://ahmettarikdemirci.io/
+dash_url: https://ahmettarikdemirci.io/story_space/docs/index.html
+theme: apple
+skip_undocumented: true
+readme: README.md
+min_acl: private
+exclude:
+  - GeneratedAssetSymbols.swift
+  - Info.plist
+  - Preview Content
+  - Localizable.xcstrings
+  - resourceBundle
+  - DeveloperToolsSupport
+  - ColorResource
+custom_categories:
+
+  - name: Views
+    children:
+      - StorySpaceApp
+      - TabbarView
+      - HomeView
+      - WelcomeView
+      - CreateStoryView
+      - EditProfile
+      - MainView
+      - PrivacyPolicyView
+      - StoryDetailView
+      - ThemeChangeView
+      - WebView
+      - StoryItemView
+      - SettingsView
+      
+  - name: View Components
+    children:
+      - SSButton
+      - SSErrorView
+      - SSImage
+      - SSNoDataView
+      
+  - name: View Models
+    children:
+      - EditProfileViewModel
+      - BaseViewModel
+      - SettingsViewViewModel
+      - ThemeChangeViewModel
+      - StoryCreationViewModel
+      - HomeViewModel
+      - WelcomeViewModel
+      - MainViewModel
+
+      
+  - name: Models
+    children:
+      - OpenAIChatResponse
+      - Choice
+      - Message
+      - OpenAIImageResponse
+      - ImageData
+      - Story
+      
+  - name: Enums
+    children:
+      - Theme
+
+      
+  - name: API Topics
+    children:
+      - ApiService
+      - ApiConstants
+      - URLRequestConfigurable
+      - BodyParameterEncoding
+      
+  - name: Router
+    children:
+      - OpenAIRouter
+      
+  - name: Extensions
+    children:
+      - Encodable
+
+      
+  - name: Utilities
+    children:
+      - SwiftUI
+      - Strings
+      
+build_tool_arguments:
+  - -scheme
+  - StorySpace
+  - -project
+  - StorySpace.xcodeproj
